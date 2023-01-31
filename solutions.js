@@ -15,18 +15,16 @@ function isBoolean(x) {
 //q2
 function hasBoolean(x) {
     for (let i = 0; i < x.length; i++) {
-        console.log(x[i]);
+        // console.log(x[i]);
         if (typeof x[i] === "boolean") {
-            return true;
-        } else {
-            return false;
+            return "true";
         }
-        console.log(typeof [i]);
     }
-};
+    return "false";
+}
 console.log(hasBoolean([1, 2, 3, 4])); // outputs false
-// console.log(hasBoolean([1, "false", 3, 4])); // outputs false
-// console.log(hasBoolean([1, 2, true, 4])); // outputs true
+console.log(hasBoolean([1, "false", 3, 4])); // outputs false
+console.log(hasBoolean([1, 2, true, 4])); // outputs true
 
 // q3
 const people = [ {
@@ -77,7 +75,7 @@ function longestName(arr) {
 }
 console.log(longestName(people));// outputs Zanzibar
 
-//q4
+//q5
 function createPerson(name, age) {
     const person = {};
     person.name = name;
