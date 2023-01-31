@@ -86,6 +86,22 @@ function createPerson(name, age) {
 const jimbob = createPerson("Jimbob", 22);
 console.log(jimbob);
 
+$(document).ready(function (){
+
+    $("#bold-btn").click(function () {
+        $(this).css("font-weight", "bold");
+    })
+
+    $("#reload-btn").click(function () {
+        location.reload();
+    })
+
+
+
+});
+
+//q6
+
 
 /**
  * Write your solutions here
