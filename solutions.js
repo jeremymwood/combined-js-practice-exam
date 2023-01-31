@@ -63,6 +63,20 @@ function minAge(people) {
 // minAge(people);
 console.log(minAge(people)); // outputs 18
 
+//q4
+function longestName(arr) {
+    let longestName = arr[0].name;
+    for (let i = 0; i < arr.length; i++) {
+        if (longestName.length > arr[i].name.length) {
+            return longestName;
+        } else {
+            longestName = arr[i].name;
+        }
+    }
+        return longestName;
+}
+console.log(longestName(people));// outputs Zanzibar
+
 
 /**
  * Write your solutions here
