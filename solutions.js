@@ -1,5 +1,17 @@
 "use strict";
 
+function isBoolean(x) {
+    if(typeof x === "boolean") {
+        return true;
+    } else {
+        return false;
+    }
+};
+
+console.log(isBoolean(42)); // outputs false
+console.log(isBoolean("true")); // outputs false
+console.log(isBoolean(false)); // outputs true
+
 /**
  * Write your solutions here
  *
