@@ -108,6 +108,17 @@ $(document).ready(function (){
             $("#data-display").text("")
     });
 
+    //this works with hard coded text
+    // $("#change-text-btn").click(function () {
+    //     // $("#change-text-btn").value($('#change-text-input').innerText);
+    //     $("#change-text-btn").text("sdfgdf");
+    // });
+
+    $("#change-text-btn").click(function () {
+        // $("#change-text-btn").value($('#change-text-input').innerText);
+        $("#change-text-btn").text($('#change-text-input').val());
+    });
+
 
 });
 
