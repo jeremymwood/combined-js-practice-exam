@@ -77,6 +77,17 @@ function longestName(arr) {
 }
 console.log(longestName(people));// outputs Zanzibar
 
+//q4
+function createPerson(name, age) {
+    const person = {};
+    person.name = name;
+    person.age = age;
+    return person;
+}
+
+const jimbob = createPerson("Jimbob", 22);
+console.log(jimbob);
+
 
 /**
  * Write your solutions here
