@@ -96,6 +96,9 @@ $(document).ready(function (){
         location.reload();
     })
 
+    $(".loud-item").click(function () {
+        alert(this.innerText);
+    })
 
 
 });
