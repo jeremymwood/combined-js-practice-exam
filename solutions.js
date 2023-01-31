@@ -8,9 +8,9 @@ function isBoolean(x) {
         return false;
     }
 };
-// console.log(isBoolean(42)); // outputs false
-// console.log(isBoolean("true")); // outputs false
-// console.log(isBoolean(false)); // outputs true
+console.log(isBoolean(42)); // outputs false
+console.log(isBoolean("true")); // outputs false
+console.log(isBoolean(false)); // outputs true
 
 //q2
 function hasBoolean(x) {
@@ -63,7 +63,7 @@ console.log(minAge(people)); // outputs 18
 
 //q4
 function longestName(arr) {
-    let longestName = arr[0].name;
+    let longestName = "";
     for (let i = 0; i < arr.length; i++) {
         if (longestName.length > arr[i].name.length) {
             return longestName;
@@ -116,13 +116,11 @@ $(document).ready(function (){
 
     $("#change-text-btn").click(function () {
         // $("#change-text-btn").value($('#change-text-input').innerText);
-        $("#change-text-btn").text($('#change-text-input').val());
+        $(this).text($('#change-text-input').val());
     });
 
 
 });
-
-//q6
 
 
 /**
