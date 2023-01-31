@@ -100,6 +100,14 @@ $(document).ready(function (){
         alert(this.innerText);
     })
 
+    $(".data-item").hover(
+        function (){
+            $("#data-display").text(this.innerText)
+        },
+        function (){
+            $("#data-display").text("")
+    });
+
 
 });
 
